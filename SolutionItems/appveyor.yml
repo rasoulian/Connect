@@ -25,13 +25,12 @@ deploy:
   api_key: 
     secure: dVoNehKptHyrR7aVPD+jG8Ew7QJ1ca4UpxMWjoQnCrSuAlxIFjkkbLNbkHRbwkuF
   skip_symbols: true
+
+
 notifications:
 - provider: Email
   to:
   - arasoulian@gmail.com
   on_build_success: true
   on_build_failure: true
-  on_build_status_changed: true
-environment:
-  my_variable:
-    secure: Aeo4uO5/SQnpGsD/dMsdrI3yvSKDKl9Eq/kkIEJFkNGoMU9NLIHxBW1eTOxW43Fv
+  on_build_status_changed: true 
