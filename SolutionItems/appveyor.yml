@@ -23,9 +23,9 @@ build_script:
 deploy:
 - provider: GitHub
   auth_token:
-    secure: dVoNehKptHyrR7aVPD+jG8Ew7QJ1ca4UpxMWjoQnCrSuAlxIFjkkbLNbkHRbwkuF
+    secure: IvSB6IfqnpNzloLvYJe2zEf/S9+3N7niFQoiQY2RyLeFhKAnbzfNJMFvZITkWDkn
   api_key: 
-    secure: dVoNehKptHyrR7aVPD+jG8Ew7QJ1ca4UpxMWjoQnCrSuAlxIFjkkbLNbkHRbwkuF
+    secure: IvSB6IfqnpNzloLvYJe2zEf/S9+3N7niFQoiQY2RyLeFhKAnbzfNJMFvZITkWDkn
   skip_symbols: true
 
 
