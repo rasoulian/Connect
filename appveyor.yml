@@ -1,0 +1,38 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+cache: C:\Users\appveyor\.dnx
+build_script:
+- cmd: >-
+    cd ./ConnectDevice
+
+    dotnet restore
+
+    dotnet pack -c release
+
+    cd ../..
+ 
+artifacts:
+- path: ./ConnectDevice/bin/release/*.nupkg
+  name: NuGet
+deploy:
+- provider: NuGet
+  api_key: my_variable
+  skip_symbols: true
+notifications:
+- provider: Email
+  to:
+  - arasoulian@gmail.com
+  on_build_success: false
+  on_build_failure: true
+  on_build_status_changed: true
+environment:
+  my_variable:
+    secure: qKgtAP13odEZ3mNY9D2daCtL6SL+DsKtFUndXrWFOU1v9UGE9YUtNiQrk8PIhRlo
