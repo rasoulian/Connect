@@ -17,11 +17,9 @@ build_script:
 
     dotnet pack -c release
 
-    cd ../..
+    cd ..
  
-artifacts:
-- path: ./ConnectDevice/bin/release/*.nupkg
-  name: NuGet
+
 deploy:
 - provider: GitHub
   api_key: my_variable
