@@ -11,7 +11,7 @@ dotnet_csproj:
 cache: C:\Users\appveyor\.dnx
 build_script:
 - cmd: >-
-    cd ./../SepidSystem.Connect
+    cd ./SepidSystem.Connect
 
     dotnet restore
 
