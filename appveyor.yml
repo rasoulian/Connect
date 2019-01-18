@@ -19,18 +19,16 @@ build_script:
 
     cd ../..
  
-artifacts:
-- path: ./ConnectDevice/bin/release/*.nupkg
-  name: NuGet
+
 deploy:
-- provider: NuGet
+- provider: GitHub
   api_key: my_variable
   skip_symbols: true
 notifications:
 - provider: Email
   to:
   - arasoulian@gmail.com
-  on_build_success: false
+  on_build_success: true
   on_build_failure: true
   on_build_status_changed: true
 environment:
