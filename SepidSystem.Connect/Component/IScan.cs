@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConnectDevice
+namespace SepidSystem.Connect
 {
     public interface IScan
     {

@@ -1,4 +1,4 @@
-﻿namespace ConnectDevice
+﻿namespace SepidSystem.Connect
 {
     public class ScanDecorator : IScan
     {

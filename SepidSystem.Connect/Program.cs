@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConnectDevice
+namespace SepidSystem.Connect
 {
     class Program
     {
