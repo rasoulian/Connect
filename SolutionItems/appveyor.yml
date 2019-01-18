@@ -19,7 +19,9 @@ build_script:
 
     cd ../..
  
-
+artifacts:
+- path: ./ConnectDevice/bin/release/*.nupkg
+  name: NuGet
 deploy:
 - provider: GitHub
   api_key: my_variable
