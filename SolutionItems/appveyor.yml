@@ -23,7 +23,7 @@ build_script:
 deploy:
 - provider: GitHub
   api_key: 
-    secure: f2b61d86beb31aa573131e5c5747388700a64d11
+    secure: dVoNehKptHyrR7aVPD+jG8Ew7QJ1ca4UpxMWjoQnCrSuAlxIFjkkbLNbkHRbwkuF
   skip_symbols: true
 notifications:
 - provider: Email
