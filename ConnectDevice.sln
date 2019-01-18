@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectDevice", "ConnectDev
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4A93BF6-0943-45D9-99D7-B87691B7C93D}"
 	ProjectSection(SolutionItems) = preProject
-		readme.txt = readme.txt
+		Solution Items\readme.txt = Solution Items\readme.txt
 	EndProjectSection
 EndProject
 Global
