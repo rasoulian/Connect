@@ -11,13 +11,13 @@ dotnet_csproj:
 cache: C:\Users\appveyor\.dnx
 build_script:
 - cmd: >-
-    cd ./SepidSystem.Connect
+    cd ./../SepidSystem.Connect
 
     dotnet restore
 
     dotnet pack -c release
 
-    cd ..
+    cd ../..
  
 
 deploy:
@@ -33,4 +33,4 @@ notifications:
   on_build_status_changed: true
 environment:
   my_variable:
-    secure: qKgtAP13odEZ3mNY9D2daCtL6SL+DsKtFUndXrWFOU1v9UGE9YUtNiQrk8PIhRlo
+    secure: Aeo4uO5/SQnpGsD/dMsdrI3yvSKDKl9Eq/kkIEJFkNGoMU9NLIHxBW1eTOxW43Fv
