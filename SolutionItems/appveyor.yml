@@ -17,13 +17,13 @@ build_script:
 
     dotnet pack -c release
 
-    cd ../..
+    cd ..
  
 
 deploy:
 - provider: GitHub
   api_key: 
-    secure: Aeo4uO5/SQnpGsD/dMsdrI3yvSKDKl9Eq/kkIEJFkNGoMU9NLIHxBW1eTOxW43Fv
+    secure: f2b61d86beb31aa573131e5c5747388700a64d11
   skip_symbols: true
 notifications:
 - provider: Email
