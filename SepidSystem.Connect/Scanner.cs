@@ -16,4 +16,20 @@ namespace SepidSystem.Connect
             throw new NotImplementedException();
         }
     }
+
+    public class Scan
+    {
+        private readonly IScanner _scanner;
+
+        public Scan(IScanner scanner)
+        {
+            _scanner = scanner;
+            
+        }
+
+        public byte[] GetFinger()
+        {
+            return _scanner.Scan();
+        }
+    }
 }
